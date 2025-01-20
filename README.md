@@ -1,6 +1,6 @@
 # Vite React Boilerplate
 
-![](/public/vite-react-boilerplate.png)
+![](/public/images/main/valorantIcon.webp)
 
 Everything you need to kick off your next Vite + React web app!
 
