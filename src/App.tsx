@@ -5,6 +5,7 @@ import { ApolloProvider } from "@apollo/client";
 import apolloClient from "./apolloClient/apolloClient";
 import { ThemeProvider } from "@/components/theme/theme-provider";
 import { Toaster } from "@/components/ui/toaster";
+import SpotlightCursor from "@/components/mouseCustom/high-light";
 
 const queryClient = new QueryClient();
 
@@ -16,6 +17,15 @@ const App = ({ router }: AppProps): FunctionComponent => {
 			<QueryClientProvider client={queryClient}>
 				<ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
 					<Toaster />
+					<SpotlightCursor
+						config={{
+							spotlightSize: 150,
+							spotlightIntensity: 1,
+							fadeSpeed: 0.1,
+							glowColor: "255, 255, 255",
+							pulseSpeed: 3000,
+						}}
+					/>
 					<RouterProvider router={router} />
 					{/* <TanStackRouterDevelopmentTools
 				router={router}
