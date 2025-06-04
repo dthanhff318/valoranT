@@ -5,7 +5,6 @@ import { ApolloProvider } from "@apollo/client";
 import apolloClient from "./apolloClient/apolloClient";
 import { ThemeProvider } from "@/components/theme/theme-provider";
 import { Toaster } from "@/components/ui/toaster";
-import SpotlightCursor from "@/components/mouseCustom/high-light";
 
 const queryClient = new QueryClient();
 
