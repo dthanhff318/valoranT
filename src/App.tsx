@@ -17,15 +17,6 @@ const App = ({ router }: AppProps): FunctionComponent => {
 			<QueryClientProvider client={queryClient}>
 				<ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
 					<Toaster />
-					<SpotlightCursor
-						config={{
-							spotlightSize: 150,
-							spotlightIntensity: 1,
-							fadeSpeed: 0.1,
-							glowColor: "255, 255, 255",
-							pulseSpeed: 3000,
-						}}
-					/>
 					<RouterProvider router={router} />
 					{/* <TanStackRouterDevelopmentTools
 				router={router}
